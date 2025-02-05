@@ -48,8 +48,8 @@ export default class MyDocument extends Document {
               __html: `
                 import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
                 Chatbot.init({
-                  chatflowid: "25f6866e-a998-4c23-b426-927ca250ba46",
-                  apiHost: "http://localhost:3000",
+                  chatflowid: "3449cfd2-7e69-43d0-8e4a-63b636212104",
+                  apiHost: "https://flowise-rek3.onrender.com",
                   chatflowConfig: {
                     /* Chatflow Config */
                   },
@@ -94,7 +94,7 @@ export default class MyDocument extends Document {
                       showAgentMessages: true,
                       title: 'Assistant',
                       titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
-                      welcomeMessage: 'Hello! This is custom welcome message',
+                      welcomeMessage: 'Hello, How can I help you?',
                       errorMessage: 'This is a custom error message',
                       backgroundColor: '#ffffff',
                       backgroundImage: 'enter image path or link',
