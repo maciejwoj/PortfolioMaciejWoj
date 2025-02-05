@@ -15,20 +15,20 @@ const Technologies = () =>  (
       <ListItem>
         <DiPython size="3rem" />
         <ListContainer>
-          <ListTitle>Matura exam</ListTitle>
+          <ListTitle>Trading</ListTitle>
           <ListParagraph>
-            Experience with<br />
-            Python
+          Experience with<br />
+          Technical Analysis, Risk menagment, Python 
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <DiReact size="3rem" />
         <ListContainer>
-          <ListTitle>Portfolio</ListTitle>
+          <ListTitle>Study projects</ListTitle>
           <ListParagraph>
-            Experience with<br />
-            Next.js React.js
+          Experience with<br />
+          Java, C++, C#, Python
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -38,7 +38,7 @@ const Technologies = () =>  (
           <ListTitle>Datebases</ListTitle>
           <ListParagraph>
             Experience with<br />
-            access Excel Python
+            C#, SQL
           </ListParagraph>
         </ListContainer>
       </ListItem>
