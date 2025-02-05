@@ -18,7 +18,7 @@ const Technologies = () =>  (
           <ListTitle>Trading</ListTitle>
           <ListParagraph>
           Experience with<br />
-          Technical Analysis, Risk menagment, Python 
+          Technical Analysis, Risk menagment, Python, Jessy
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -28,7 +28,7 @@ const Technologies = () =>  (
           <ListTitle>Study projects</ListTitle>
           <ListParagraph>
           Experience with<br />
-          Java, C++, C#, Python
+          Java, C++, C#, Python, flowise
           </ListParagraph>
         </ListContainer>
       </ListItem>
