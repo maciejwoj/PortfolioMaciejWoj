@@ -102,8 +102,9 @@ export default class MyDocument extends Document {
                       width: 400,
                       fontSize: 14,
                       starterPrompts: [
-                          "What is a bot?",
-                          "Who are you?"
+                          "What is Maciek's best project?",
+                          "Tell me about Maciek?",
+                          "Contact information"
                       ],
                       starterPromptFontSize: 15,
                       clearChatOnReload: false,
