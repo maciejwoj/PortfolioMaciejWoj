@@ -48,7 +48,7 @@ export default class MyDocument extends Document {
               __html: `
                 import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
                 Chatbot.init({
-                  chatflowid: "2a2dc38e-9318-4137-93be-ed185a973c50",
+                  chatflowid: "77286b14-cff3-4c62-960d-49c2655c8e1e",
                   apiHost: "https://flowise-rek3.onrender.com",
                   chatflowConfig: {
                     /* Chatflow Config */
