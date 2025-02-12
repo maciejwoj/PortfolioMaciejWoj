@@ -9,14 +9,12 @@ const Hero = () => {
     script.src = 'https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js';
     script.async = true;
 
-    // Po załadowaniu skryptu inicjujemy chatbota
     script.onload = () => {
       if (window.Chatbot) {
-        // Ustawienie adresu API w zależności od środowiska
         const apiHost = process.env.NODE_ENV === 'development'
           ? "http://localhost:3001"
           : "https://flowise-9kc0.onrender.com";
-          
+        
         window.Chatbot.init({
           chatflowid: "25f6866e-a998-4c23-b426-927ca250ba46",
           apiHost: apiHost,
@@ -28,7 +26,6 @@ const Hero = () => {
 
     document.body.appendChild(script);
 
-    // Czyszczenie skryptu przy odmontowywaniu komponentu
     return () => {
       document.body.removeChild(script);
     };
@@ -36,15 +33,23 @@ const Hero = () => {
 
   return (
     <Section row nopadding>
-      <LeftSection>
-        <SectionTitle main center>
-          Welcome to <br />
-          My portfolio website
-        </SectionTitle>
-        <SectionText>
-          Young, ambitious programmer looking for development opportunities
-        </SectionText>
-        <Button onClick={() => window.open('/images/CV.pdf', '_blank')}>Learn More CV</Button>
+    <LeftSection>
+    <SectionTitle main center>
+      Hey, I'm Maciej!
+    </SectionTitle>
+    <SectionText>
+      I'm a <strong>Computer Science</strong> student with a focus on <strong>Artificial Intelligence</strong> and a passion for building intuitive, user-friendly web applications.
+    </SectionText>
+
+    <SectionText>
+      Driven by curiosity, I'm constantly exploring new areas—whether it's blockchain, advanced trading algorithms, or machine learning. 
+      Feel free to check out my projects below or download my CV to learn more about my journey.
+      If you have any questions, chat with my assistant in the bottom-right corner of the page!
+    </SectionText>
+        
+        <Button onClick={() => window.open('/images/CV.pdf', '_blank')}>
+          Download CV
+        </Button>
       </LeftSection>
     </Section>
   );
