@@ -8,9 +8,6 @@ const Technologies = () =>  (
     <SectionDivider />
     <br/>
     <SectionTitle>Technologies</SectionTitle>
-    <SectionText>
-      Now I'm working with basic programming languages, but I'm stil learnig
-    </SectionText>
     <List>
       <ListItem>
         <DiPython size="3rem" />

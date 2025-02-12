@@ -1,20 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from 'react'; 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
-const Hero = (props) => {
+const Hero = () => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js';
     script.async = true;
 
-    // Make sure the script is loaded before initializing the chatbot
+    // Po załadowaniu skryptu inicjujemy chatbota
     script.onload = () => {
-      if (window.Chatbot) {  // Ensure Chatbot is available on the window object
+      if (window.Chatbot) {
+        // Ustawienie adresu API w zależności od środowiska
+        const apiHost = process.env.NODE_ENV === 'development'
+          ? "http://localhost:3001"
+          : "https://flowise-9kc0.onrender.com";
+          
         window.Chatbot.init({
           chatflowid: "25f6866e-a998-4c23-b426-927ca250ba46",
-          apiHost: "http://localhost:3001",
+          apiHost: apiHost,
         });
       } else {
         console.error('Chatbot is not available');
@@ -23,8 +28,9 @@ const Hero = (props) => {
 
     document.body.appendChild(script);
 
+    // Czyszczenie skryptu przy odmontowywaniu komponentu
     return () => {
-      document.body.removeChild(script); // Clean up the script on unmount
+      document.body.removeChild(script);
     };
   }, []);
 
