@@ -9,12 +9,12 @@ export const projects = [
     id: 0,
   },
   {
-    title: 'Password manager',
-    description:"This C++ terminal-based password manager application provides a secure and convenient way to manage and generate passwords. Designed with user security and ease of use in mind, the application allows users to securely store and manage their passwords using a master password to encrypt and decrypt stored data. ",
-    image: '/images/passwordM.jpg',//change image
-    tags: ['C++'],
-    source: 'https://github.com/maciejwoj/Menadzer-Hasel',
-    visit: 'https://github.com/maciejwoj/Menadzer-Hasel',
+    title: 'API Controller',
+    description:"Developed a robust API controller to manage backend processes, enabling secure and efficient communication between services. ",
+    image: '/images/APIcontroller.jpg',//change image
+    tags: ['C#', '.NET'],
+    source: 'https://github.com/maciejwoj/API-Controller',
+    visit: 'https://github.com/maciejwoj/API-Controller',
     id: 1,
   },
   {

@@ -38,7 +38,7 @@ const Hero = () => {
       Hey, I'm Maciej!
     </SectionTitle>
     <SectionText>
-      I'm a <strong>Computer Science</strong> student with a focus on <strong>Artificial Intelligence</strong> and a passion for building intuitive, user-friendly web applications.
+      I'm a <strong>Computer Science</strong> student with a focus on <strong>Artificial Intelligence</strong> with a passion for financial markets and business process automation
     </SectionText>
 
     <SectionText>
