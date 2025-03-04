@@ -11,7 +11,7 @@ export const projects = [
   {
     title: 'API Controller',
     description:"Developed a robust API controller to manage backend processes, enabling secure and efficient communication between services. ",
-    image: '/images/APIcontroller.jpg',//change image
+    image: '/images/APIcontroller.png',//change image
     tags: ['C#', '.NET'],
     source: 'https://github.com/maciejwoj/API-Controller',
     visit: 'https://github.com/maciejwoj/API-Controller',
